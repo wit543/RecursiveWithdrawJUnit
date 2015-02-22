@@ -116,28 +116,27 @@ public class RecursiveWithdrawTest {
 		assertTrue(checkByAdding(valuable, 300));
 	}
 	@Test
-	public void hardcoreTest41_61_25_37_607_758_41056_42_45_245_887_452_23_1022_1054_1024_1111_75_83_454_251_451_458_withdraw_5214(){
+	public void Test41_61_25_37_607_758_41056_42_45_245_887_452_23_1022_1054_1024_1111_75_83_454_251_451_458_withdraw_5214(){
 		Purse purse =depositDialog("41 61 25 37 607 758 41056 42 45 245 887 452 23 1022 1054 1024 1111 75 83 454 251 451 458");
 		Valuable[] valuable = purse.withdraw(5214);
 		System.out.println("Test: test41_61_25_37_607_758_41056_42_45_245_887_452_23_1022_1054_1024_1111_75_83_454_251_451_458_withdraw_5214");
-		System.out.println(valuable==null);
-		//System.out.println("Your answer: "+convetToString(valuable));
-		System.out.println("Expected answer should contains:unknow There are many solution\n");
+		System.out.println("Your answer: "+convertToString(valuable));
+		System.out.println("Expected answer should contains:[1111 1054 758 458 454 451 251 245 83 75 61 45 42 41 37 25 23] There are many solution\n");
 		assertNotNull(valuable);
 		String[] answer =new String[]{""};
 		//assertTrue(check(answer,convertToString(valuable)));
 		assertTrue(checkByAdding(valuable, 5214));
 	}
 	@Test(timeout=1000000000)
-	public void hardcoreTest41_37_607_245_887_452_1054_1024_75_83_251_458_withdraw_5214(){
+	public void Test41_37_607_245_887_452_1054_1024_75_83_251_458_withdraw_5214(){
 		Purse purse = depositDialog("41 37 607 245 887 452 1054 1024 75 83 251 458");
 		Valuable[] valuable = purse.withdraw(5214);
 		System.out.println("Test: hardcoreTest41_37_607_245_887_452_1054_1024_75_83_251_458_withdraw_5214");
-		System.out.println(valuable==null);
-		System.out.println(Arrays.toString(valuable));
+		System.out.println("Your answer: "+convertToString(valuable));
+		System.out.println("Expected answer should contains:[1054 1024 887 607 458 452 251 245 83 75 41 37] There are many solution\n");
+	
 		assertNotNull(valuable);
 		String[] answer =new String[]{"1054 1024 887 607 458 452 251 245 83 75 41 37"};
-		System.out.println(convertToString(valuable));
 		//assertTrue(check(answer,convertToString(valuable)));
 		assertTrue(checkByAdding(valuable, 5214));
 	}
