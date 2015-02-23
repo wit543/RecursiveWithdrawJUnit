@@ -96,7 +96,7 @@ public class RecursiveWithdrawTest {
 		Valuable[] valuable = purse.withdraw(300);
 		System.out.println("Test: test245_86_77_53_46_34_28_12_9_5_3_1withdraw_300");
 		System.out.println("Your answer: "+convertToString(valuable));
-		System.out.println("Expected answer should contains:[86 77 53 46 34 3 1], [9 46 245 4],[5 34 12 28 9 46 86 77 3],[245 34 12 9],[3 5 9 12 28 34 46 77 86"
+		System.out.println("Expected answer should contains:[86 77 53 46 34 3 1], [9 46 245],[5 34 12 28 9 46 86 77 3],[245 34 12 9],[3 5 9 12 28 34 46 77 86"
 				+ "] There are many solution\n");
 		assertNotNull(valuable);
 		String[] answer =new String[]{"86 77 53 46 34 3 1","5 34 12 28 9 46 86 77 3","9 46 245","245 34 12 9","86 77 46 34 28 12 9 5 3","3 5 9 12 28 34 46 77 86"};
@@ -109,7 +109,7 @@ public class RecursiveWithdrawTest {
 		Valuable[] valuable = purse.withdraw(300);
 		System.out.println("Test: test3_77_86_53_46_9_28_12_34_5_245_1withdraw_300");
 		System.out.println("Your answer: "+convertToString(valuable));
-		System.out.println("Expected answer should contains:[86 77 53 46 34 3 1], [9 46 245 4],[5 34 12 28 9 46 86 77 3],[3 5 9 12 28 34 46 77 86] There are many solution\n");
+		System.out.println("Expected answer should contains:[86 77 53 46 34 3 1], [9 46 245],[5 34 12 28 9 46 86 77 3],[3 5 9 12 28 34 46 77 86] There are many solution\n");
 		assertNotNull(valuable);
 		String[] answer =new String[]{"86 77 53 46 34 3 1","9 46 245","5 34 12 28 9 46 86 77 3","86 77 46 34 28 12 9 5 3","3 5 9 12 28 34 46 77 86"};
 		assertTrue(check(answer,convertToString(valuable)));
